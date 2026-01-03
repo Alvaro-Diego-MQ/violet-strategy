@@ -7,7 +7,7 @@ interface ChatMessage {
 }
 
 // CONFIGURACIÓN: Verifica tu Key en Google AI Studio
-const API_KEY = "AIzaSyBzSka2Fc3s2jnpgoZOtpzpu5P9XxIcBQc"; 
+const API_KEY = process.env.GEMINI_API_KEY; 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export async function POST(req: Request) {
