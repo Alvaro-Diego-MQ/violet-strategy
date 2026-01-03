@@ -6,15 +6,20 @@ interface ChatMessage {
   content: string;
 }
 
-// CONFIGURACIÓN: Verifica tu Key en Google AI Studio
-const API_KEY = process.env.GEMINI_API_KEY; 
+const API_KEY = process.env.GEMINI_API_KEY || ""; 
+
+if (!API_KEY) {
+  console.warn("⚠️ GEMINI_API_KEY no está definida en las variables de entorno");
+}
+
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export async function POST(req: Request) {
   try {
     const { messages }: { messages: ChatMessage[] } = await req.json();
 
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" }); 
+    
     const systemPrompt = `Eres Violet AI, el asistente experto y entusiasta de Violet Strategy. 💜✨
 
 REGLAS DE ORO:
@@ -38,6 +43,7 @@ tu numero es +51 923 695 393
 tu direccion es Santa Catalina 117, Arequipa
 Usa esta información para ayudar a los usuarios interesados en Violet Strategy.
 el horario de atencion es Lunes a Viernes de 9am a 6pm hora Peruana`;
+
     const history = messages.slice(0, -1).map((m: ChatMessage) => ({
       role: m.role,
       parts: [{ text: m.content }],
@@ -58,21 +64,22 @@ el horario de atencion es Lunes a Viernes de 9am a 6pm hora Peruana`;
 
     return NextResponse.json({ content: text });
 
-  } catch (error: any) {
+  } catch (error: unknown) { 
     console.error("Gemini Error:", error);
 
-    // Gestión de cuota (429) o Modelo no encontrado (404)
-    if (error.status === 429) {
+    const serverError = error as { status?: number };
+
+    if (serverError.status === 429) {
       return NextResponse.json({ 
         content: "¡Hola! Mi cerebro está procesando muchas marcas ahora mismo. 🚀 Por favor, dame un minuto e inténtalo de nuevo o hablemos por el formulario." 
       });
     }
 
-    if (error.status === 404) {
+    if (serverError.status === 404) {
         return NextResponse.json({ 
           content: "Parece que el modelo que estoy usando ha sido actualizado. Por favor, contacta con soporte de Violet Strategy." 
         });
-      }
+    }
 
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }

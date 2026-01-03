@@ -54,7 +54,7 @@ export default function ChatbotIA() {
       if (data.content) {
         setMessages(prev => [...prev, { role: 'model', content: data.content }]);
       }
-    } catch (err) {
+    } catch {
       setMessages(prev => [...prev, { role: 'model', content: '¡Ups! Mi sistema tuvo un pequeño hipo 😅 ¿Me lo repites, por fis? ✨' }]);
     } finally {
       setIsLoading(false);
