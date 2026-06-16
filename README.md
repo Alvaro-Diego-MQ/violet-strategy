@@ -13,7 +13,7 @@
 <p align="center">
   <br />
   <a href="https://violet-strategy.vercel.app/">
-    <img src="https://img.shields.io/badge/🌐%20DESPLIEGUE%20EN%20VIVO-VER%20DEMO%20AQUÍ-7C3AED?style=for-the-badge" alt="Demo en Vivo" height="45"/>
+    <img src="https://img.shields.io/badge/🌐%20DESPLIEGUE%20EN%20VIVO-VER%20DEMO%20AQUÍ-7C3AED?style=for-the-badge" alt="Demo en Vivo" height="75"/>
   </a>
 </p>
 
