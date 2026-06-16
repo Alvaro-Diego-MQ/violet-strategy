@@ -2,17 +2,17 @@
 
 <div align="center">
 
-<img src="public/logo.png" alt="Violet Strategy Logo" width="180" height="180"/>
+<img src="public/logo_v.png" alt="Violet Strategy Logo" width="180" height="180"/>
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge\&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
-![Gemini AI](https://img.shields.io/badge/Gemini-AI-8E75FF?style=for-the-badge\&logo=google-gemini\&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Gemini-AI-8E75FF?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completado-brightgreen?style=for-the-badge)
 
 <p align="center">
   <br />
-  <a href="https://tu-demo.vercel.app">
+  <a href="https://violet-strategy.vercel.app/">
     <img src="https://img.shields.io/badge/🌐%20DESPLIEGUE%20EN%20VIVO-VER%20DEMO%20AQUÍ-7C3AED?style=for-the-badge" alt="Demo en Vivo" height="45"/>
   </a>
 </p>
@@ -27,7 +27,7 @@ Este proyecto consiste en el desarrollo de una landing page moderna para una age
 
 La característica principal del proyecto es la integración de un **chatbot impulsado por Inteligencia Artificial mediante la API de Gemini**, diseñado para interactuar con los visitantes del sitio y proporcionar información contextual sobre los servicios, la empresa y el contenido disponible dentro de la plataforma.
 
-El asistente comprende consultas en lenguaje natural, mantiene el contexto conversacional y limita sus respuestas al dominio de información definido para la empresa.
+El asistente comprende consultas en lenguaje natural, mantiene el contexto conversacional y limita sus respuestas exclusivamente a la información relacionada con el negocio.
 
 ---
 
@@ -35,43 +35,22 @@ El asistente comprende consultas en lenguaje natural, mantiene el contexto conve
 
 * 🤖 Integrar Inteligencia Artificial en una experiencia web real.
 * 🎨 Crear una interfaz moderna y atractiva para una agencia digital.
-* ⚡ Implementar una arquitectura escalable basada en componentes reutilizables.
-* 📱 Garantizar una experiencia responsive para todos los dispositivos.
-* 🧠 Desarrollar un chatbot capaz de comprender lenguaje natural.
-* 🚀 Aplicar buenas prácticas de desarrollo con Next.js y TypeScript.
+* ⚡ Implementar una arquitectura basada en componentes reutilizables.
+* 📱 Garantizar una experiencia responsive en cualquier dispositivo.
+* 🧠 Aplicar procesamiento de lenguaje natural mediante Gemini.
+* 🚀 Utilizar buenas prácticas de desarrollo con Next.js y TypeScript.
 
 ---
 
-## ✨ Características Implementadas
+## ✨ Características Principales
 
-### 🌐 Landing Page Moderna
-
-* Hero Section interactiva.
-* Presentación de servicios.
-* Portafolio de proyectos.
-* Información corporativa.
-* Testimonios de clientes.
-* Formulario de contacto.
-* Navegación intuitiva.
-* Diseño responsive.
-
-### 🤖 Chatbot con IA
-
-* Integración con Gemini API.
-* Comprensión de lenguaje natural.
-* Conversaciones contextualizadas.
-* Respuestas enfocadas exclusivamente en la empresa.
-* Interfaz conversacional moderna.
-* Indicadores de estado y carga.
-* Historial de mensajes durante la sesión.
-
-### 🎨 Experiencia de Usuario
-
-* Animaciones con Framer Motion.
-* Modo oscuro.
-* Componentes reutilizables.
-* Transiciones suaves.
-* Diseño moderno inspirado en agencias digitales premium.
+* 🤖 Chatbot con IA integrado mediante Gemini API.
+* 💬 Comprensión de lenguaje natural y respuestas contextualizadas.
+* 🎨 Interfaz moderna con animaciones utilizando Framer Motion.
+* 📱 Diseño responsive para móviles, tablets y escritorio.
+* 🌙 Soporte para modo oscuro.
+* ♻️ Arquitectura basada en componentes reutilizables.
+* ⚡ Desarrollado con Next.js, TypeScript y Tailwind CSS.
 
 ---
 
@@ -84,7 +63,7 @@ El asistente comprende consultas en lenguaje natural, mantiene el contexto conve
   <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
   <img src="https://img.shields.io/badge/Framer%20Motion-000000?style=for-the-badge&logo=framer&logoColor=white"/>
   <img src="https://img.shields.io/badge/Gemini%20API-8E75FF?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Lucide-111111?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Lucide%20React-111111?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </p>
 
@@ -95,96 +74,90 @@ El asistente comprende consultas en lenguaje natural, mantiene el contexto conve
 ```text
 src/
 │
-├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
+├── app/                      # Configuración principal de rutas y layout
+│   ├── layout.tsx            # Estructura global de la aplicación
+│   ├── page.tsx              # Página principal
 │   └── api/
-│       └── chat/
+│       └── chat/             # Endpoint para comunicación con Gemini AI
 │
 ├── components/
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── Services.tsx
-│   ├── Portfolio.tsx
-│   ├── About.tsx
-│   ├── Testimonials.tsx
-│   ├── Contact.tsx
-│   ├── ChatbotIA.tsx
-│   └── Footer.tsx
+│   ├── Navbar.tsx            # Barra de navegación
+│   ├── Hero.tsx              # Sección principal de bienvenida
+│   ├── Services.tsx          # Servicios de la agencia
+│   ├── Portfolio.tsx         # Portafolio de proyectos
+│   ├── About.tsx             # Información corporativa
+│   ├── Testimonials.tsx      # Testimonios de clientes
+│   ├── Contact.tsx           # Formulario de contacto
+│   ├── ChatbotIA.tsx         # Chatbot inteligente integrado
+│   └── Footer.tsx            # Pie de página
 │
-├── public/
-│   ├── logo.png
-│   └── assets/
+├── public/                   # Recursos estáticos
+│   ├── logo.png              # Logotipo del proyecto
+│   └── assets/               # Imágenes y recursos gráficos
 │
-└── styles/
+└── styles/                   # Estilos globales y configuraciones visuales
 ```
-
----
-
-## 📁 Descripción de Carpetas
-
-| Carpeta    | Función                                          |
-| ---------- | ------------------------------------------------ |
-| app        | Configuración principal de rutas y layout        |
-| api/chat   | Endpoint encargado de la comunicación con Gemini |
-| components | Componentes reutilizables de la interfaz         |
-| public     | Recursos estáticos e imágenes                    |
-| styles     | Estilos globales del proyecto                    |
 
 ---
 
 ## 🧠 Funcionamiento del Chatbot
 
-El chatbot actúa como un asistente virtual especializado en la información de Violet Strategy.
+El chatbot funciona como un asistente virtual especializado en la información de Violet Strategy.
 
 ### Flujo de funcionamiento
 
 1. El usuario envía una consulta.
-2. La aplicación procesa el mensaje.
-3. Se envía el contexto a Gemini API.
-4. Gemini genera una respuesta contextual.
-5. La respuesta es mostrada en la interfaz.
-6. El asistente mantiene el enfoque en los servicios y contenido del sitio.
+2. La aplicación procesa el mensaje recibido.
+3. La solicitud es enviada a Gemini API.
+4. La IA analiza el contexto de la conversación.
+5. Se genera una respuesta relevante.
+6. La respuesta es mostrada dentro de la interfaz del chatbot.
+
+El sistema está configurado para mantener el enfoque en los servicios, información corporativa y contenido relacionado con la empresa.
 
 ---
 
-## 🚀 Instalación y Ejecución
+## 🚀 Instalación y Uso
 
-### Clonar repositorio
+### 🔹 Clonar repositorio
 
 ```bash
 git clone https://github.com/TU-USUARIO/violet-strategy.git
 ```
 
-### Ingresar al proyecto
+### 🔹 Ingresar al proyecto
 
 ```bash
 cd violet-strategy
 ```
 
-### Instalar dependencias
+### 🔹 Instalar dependencias
 
 ```bash
 npm install
 ```
 
-### Crear variables de entorno
+### 🔹 Configurar variables de entorno
+
+Crear un archivo:
 
 ```env
 .env.local
 ```
 
+Agregar:
+
 ```env
 GEMINI_API_KEY=TU_API_KEY
 ```
 
-### Ejecutar proyecto
+### 🔹 Ejecutar en desarrollo
 
 ```bash
 npm run dev
 ```
 
-Abrir:
+Abrir en el navegador:
 
 ```text
 http://localhost:3000
@@ -200,9 +173,9 @@ El proyecto puede desplegarse fácilmente en plataformas compatibles con Next.js
 * Netlify
 * Railway
 
-La versión de producción se encuentra disponible en:
+La aplicación se encuentra disponible en:
 
-👉 https://tu-demo.vercel.app
+👉 https://violet-strategy.vercel.app/
 
 ---
 
