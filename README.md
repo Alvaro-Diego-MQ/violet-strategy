@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🤖 Violet Strategy
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gemini_AI-8E75FF?style=for-the-badge&logo=google-gemini&logoColor=white" />
+</p>
 
-First, run the development server:
+<p align="center">
+  Sitio web moderno para una agencia de marketing digital con un chatbot impulsado por Inteligencia Artificial.
+</p>
+
+---
+
+## 🌐 Demo
+
+🔗 **Demo Online:** https://tu-demo.vercel.app
+
+---
+
+## 📸 Vista Previa
+
+<img src="./public/preview.png" alt="Vista previa del proyecto" />
+
+---
+
+## 🚀 Características
+
+✅ Diseño moderno y responsive.
+
+✅ Arquitectura basada en componentes reutilizables.
+
+✅ Animaciones fluidas con Framer Motion.
+
+✅ Modo oscuro.
+
+✅ Secciones informativas y comerciales.
+
+✅ Chatbot integrado con IA.
+
+✅ Experiencia optimizada para dispositivos móviles.
+
+---
+
+## 🤖 Chatbot Inteligente
+
+La funcionalidad principal del proyecto es la integración de un chatbot desarrollado con la API de Gemini.
+
+### ¿Qué puede hacer?
+
+* Comprender preguntas escritas en lenguaje natural.
+* Mantener el contexto de la conversación.
+* Resolver consultas relacionadas con la empresa.
+* Brindar información sobre servicios y soluciones.
+* Guiar al usuario dentro del sitio web.
+* Limitar respuestas fuera del contexto del negocio.
+
+Esto permite ofrecer una experiencia más cercana e interactiva para los visitantes.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+| Tecnología    | Uso                     |
+| ------------- | ----------------------- |
+| Next.js       | Framework principal     |
+| React         | Interfaz de usuario     |
+| TypeScript    | Tipado estático         |
+| Tailwind CSS  | Estilos                 |
+| Framer Motion | Animaciones             |
+| Gemini API    | Inteligencia Artificial |
+| Lucide React  | Iconografía             |
+
+---
+
+## 📂 Estructura General
+
+```bash
+src/
+│
+├── app/
+│   ├── page.tsx
+│   ├── layout.tsx
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── Services.tsx
+│   ├── Portfolio.tsx
+│   ├── About.tsx
+│   ├── Testimonials.tsx
+│   ├── Contact.tsx
+│   ├── ChatbotIA.tsx
+│   └── Footer.tsx
+│
+└── api/
+    └── chat/
+```
+
+## ⚙️ Instalación
+
+### 1. Clonar repositorio
+
+```bash
+git clone https://github.com/TU-USUARIO/violet-strategy.git
+```
+
+### 2. Ingresar al proyecto
+
+```bash
+cd violet-strategy
+```
+
+### 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 4. Configurar variables de entorno
+
+Crear un archivo:
+
+```env
+.env.local
+```
+
+Agregar:
+
+```env
+GEMINI_API_KEY=TU_API_KEY
+```
+
+### 5. Ejecutar proyecto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Objetivo del Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+Desarrollar una landing page moderna utilizando Next.js e integrar un chatbot basado en Inteligencia Artificial capaz de comprender consultas de los usuarios y proporcionar información relevante sobre la empresa y sus servicios.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Autor
 
-## Deploy on Vercel
+Desarrollado por **Diego MQ**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: https://github.com/Alvaro-Diego-MQ
