@@ -3,7 +3,7 @@
 <div align="center">
 
 <img src="public/logo_v.png" alt="Violet Strategy Logo" width="280" height="280"/>
-
+<br/>
 ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge\&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
@@ -11,7 +11,7 @@
 ![Status](https://img.shields.io/badge/Status-Completado-brightgreen?style=for-the-badge)
 
 <p align="center">
-  <br />
+  <br/>
   <a href="https://violet-strategy.vercel.app/">
     <img src="https://img.shields.io/badge/🌐%20DESPLIEGUE%20EN%20VIVO-VER%20DEMO%20AQUÍ-7C3AED?style=for-the-badge" alt="Demo en Vivo" height="55"/>
   </a>
